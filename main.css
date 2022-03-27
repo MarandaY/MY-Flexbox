@@ -100,17 +100,14 @@ footer {
 }
 
 
-@media screen and (max-width : 880px) {
+@media only screen and (max-width : 880px) {
   .column {
     flex: 50%;
     max-width: 40%;
   }
 }
 
-@media screen and (max-width: 550px) 
-and (device-width: 350px)
-and (device-height: 700px) 
-and (orientation: portrait)
+@media only screen and (max-width: 450px) 
 {
   .column {
     flex: 100%;
