@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: lavender
+}
+
+.header {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 30px;
+    background: #4A648B;
+    color: white;
+}
+
+h3 {
+	font-size: 30px; 
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: palegreen;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+footer {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: center;
+	padding: 20px;
+}
+
+.footer-row {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+	background: #4A648B;
+}
+
+.footer-row > div {
+  color: white;
+  background-color: #808FDC;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-left {
+	padding: 20px;
+	flex: 50%;
+	
+}
+
+.footer-right {
+	padding: 20px;
+	flex: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-row {
+	flex-direction: column;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+	vertical-align: middle;
+	
+}
+
+
+@media screen and (max-width : 880px ){
+  .column {
+    flex: 50%;
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
