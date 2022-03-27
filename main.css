@@ -4,12 +4,13 @@
 * {box-sizing: border-box}
 
 body {
-	background: lavender
+	background: lavender;
 }
 
 .header {
+	display: flex;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	text-align: center;
+	justify-content: center;
 	padding: 20px;
 	margin-bottom: 30px;
     background: #4A648B;
@@ -103,10 +104,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) 
-	and (max-device-width: 400px) 
 {
   .column {
     flex: 100%;
+	flex-wrap: wrap;
     max-width: 100%;
 	flex-direction: column;
   }
