@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {box-sizing: border-box}
+
 body {
 	background: lavender
 }
@@ -97,11 +99,11 @@ footer {
   .column {
     flex: 50%;
     max-width: 40%;
-	flex-direction: column;
   }
 }
 
 @media screen and (max-width: 500px) 
+	and (max-device-width: 400px) 
 {
   .column {
     flex: 100%;
